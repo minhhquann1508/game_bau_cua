@@ -6,7 +6,7 @@ export default function ListItem() {
     const renderListItem = () => {
         return propsSelector.betList.map((item, index) => {
             return (
-                <Item item={item} index={index} />
+                <Item key={index} item={item} index={index} />
             )
         })
     }

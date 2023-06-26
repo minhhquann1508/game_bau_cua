@@ -62,6 +62,10 @@ export const diceReducer = (state = stateDefault, action) => {
             })
             return { ...state };
         }
+        case 'PLAY_AGAIN': {
+            window.location.reload();
+            break;
+        }
         default: {
             return state;
         }
